@@ -9,7 +9,7 @@ for(i=0; i < cities.length; i++){
     
     request(url, (err, res, body) => {
         const data = JSON.parse(body)
-        console.log(data.main)
+        return data.main
     })
 }
 
