@@ -1,7 +1,7 @@
 const request = require("request")
 const dotenv = require("dotenv").config()
 
-const cities = ["Venezuela,ve", "Colombia,co"]
+const cities = ["Venezuela,ve", "Colombia,co", "peru,pe"]
 
 let i
 for(i=0; i < cities.length; i++){
@@ -9,7 +9,7 @@ for(i=0; i < cities.length; i++){
     
     request(url, (err, res, body) => {
         const data = JSON.parse(body)
-        console.log(data.main.temp)
+        console.log(data.main)
     })
 }
 
