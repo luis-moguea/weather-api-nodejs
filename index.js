@@ -1,7 +1,7 @@
 const request = require("request")
 const dotenv = require("dotenv").config()
 
-const cities = ["Venezuela,ve", "Colombia,co", process.argv[2]]
+const cities = ["Venezuela,ve", "Colombia,co"]
 
 let i
 for(i=0; i < cities.length; i++){
